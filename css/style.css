@@ -114,14 +114,16 @@ div .package header:first-child{
     /*Your code here again.*/ 
     flex-direction: row;
     display: flex;
-    align-items: flex-start;
+    align-items: center;
+    justify-content: space-between;
   }
 
   /*Requirement 10*/
   .nav_links{
-    /*Your code here again.*/  
+    /*Your code here again.*/ 
+    display: flex;
+    align-items: center;
     flex-direction: row;
-    align-items: flex-end;
   }
 
   /*Requirement 11*/
@@ -135,6 +137,12 @@ div .package header:first-child{
 /*Requirement 12*/
 /*Add media query to handle reduced-motion*/
 /*Your code here again.*/ 
+@media screen and (prefers-reduced-motion: reduce){
+  .logo{
+    
+  }
+
+}
 
 
 
