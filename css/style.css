@@ -71,6 +71,7 @@ div .package header:first-child{
   /*Your code here again.*/
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 
 }
 
@@ -138,9 +139,7 @@ div .package header:first-child{
 /*Add media query to handle reduced-motion*/
 /*Your code here again.*/ 
 @media screen and (prefers-reduced-motion: reduce){
-  .logo{
-    
-  }
+ 
 
 }
 
