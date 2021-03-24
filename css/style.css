@@ -138,7 +138,13 @@ div .package header:first-child{
 /*Requirement 12*/
 /*Add media query to handle reduced-motion*/
 /*Your code here again.*/ 
-@media screen and (prefers-reduced-motion: reduce){
+@media screen and (prefers-reduced-motion){
+  #logo{
+    position: relative;
+    animation-duration: 0s;
+    animation-name: logo_grow;
+    animation-iteration-count: 0;
+  }
  
 
 }
@@ -148,6 +154,34 @@ div .package header:first-child{
 @media print { 
 
   /*Requirement 13*/
+  body{
+    background-image: none;
+
+  }
+  nav{
+    width: 100%;
+  }
+  .nav_links{
+    display: flex;
+    flex-direction: column;
+
+  }
+  .price{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-wrap: wrap;
+  }
+  .package{
+    display: flex;
+    border: 2px solid  #45ADAD;
+    flex-basis: 200px;
+  }
+  .gallery{
+    display: none;
+  }
+  
+
   /*Requirement 14*/
   /*Requirement 15*/
   /*Requirement 16*/
